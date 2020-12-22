@@ -1,0 +1,78 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Header from './coentmpo/header'
+import Footer from './coentmpo/footer'
+const  App=()=>{
+  return(
+    <div>
+    <React.Fragment>
+    <Header/>
+    <center>
+    <h1>this is web page</h1>
+    </center></React.Fragment>
+    <Footer/>
+    </div>
+  )
+
+}
+
+ReactDOM.render(<App/>,document.getElementById('root'))
+
+
+
+parent to child=props
+child to parent=props with function
+
+ <div class ="conatiner">
+        <div class="panel panel-info">
+        <div class="panel panel-heading">
+            <h4>Place your order</h4>
+        </div>
+        <div class="panel panel-body">
+        <div class="from-group">
+            <label> <input type="text" name="order_id" value={this.state.order_id} readOnly className="from-control"/>
+            </label>
+        </div>
+        <div class="from-group">
+            <label name="order_id"></label> 
+            <input value={this.state.hotel_id} readOnly className="from-control">
+        </input>
+        </div>
+        <div  class="from-group">
+            <label name="hotel_name"></label>
+            <input value={this.state.phone} readOnly classNaame="from-control"></input>
+        </div>
+        <div class="from-group">
+            <label name="name"></label>
+            <input value={this.state.name} readOnly className="from-control" onChange={this.handleonchange}></input>
+        </div>
+        <div  class="from-group">
+            <label name="phone"></label>
+            <input value={this.state.phone} readOnly classNaame="from-control"
+            onChange={this.handleonchangephone}></input>
+        </div>
+        <div class="from-group">
+            <label name="address"></label>
+            <input type="text"  value={this.state.address} readOnly className="from-control"  onChange={this.handleonchangeperson}/>
+        </div>
+        <div class="from-group">
+            <label>Person</label>
+            <select type="text" value={this.state.person} readonly className="from-control"/>
+            <option value="1">one</option>
+            <option value="2">two</option>
+            <option value="3">three</option>
+        </div>
+            <Link to="/" className="btn btn-danger">Back</Link>
+             <button className="btn btn-danger">submit</button>
+        </div>
+
+ <h1> Costfilter  costdata={((data)=>{this.SetDataAsperfilter(data)})}/
+            Cuisinefilter  cuisinedata={((data)=> {this.SetDataAsperfilter(data)})}/
+           </h1>
+
+/// first consturctor call ,first lod is happen then api call
+
+
+  <h3>meal are here {this.state.mealname}</h3>
+        </center>
+        <ListingDisplay listdata={this.state.hotellist}></ListingDisplay>
