@@ -43,11 +43,32 @@ function Home() {
 			}
 			 </div>
 			 <div className="Home-row">
-			     <Product/>
-				 <Product/>
-				 <Product/>
-			     <Product/>
+			 {
+				products.map((product)=>(
+					<Product
+						id={product.id}
+						key={product.id}
+						title={product.product.title}
+						price={product.product.price}
+						rating={product.product.rating}
+						image={product.product.image}
+					/>
+				))
+			}
 			 </div>
+			 <div className="Home-row">
+			 {
+				products.map((product)=>(
+					<Product
+						id={product.id}
+						key={product.id}
+						title={product.product.title}
+						price={product.product.price}
+						rating={product.product.rating}
+						image={product.product.image}
+					/>
+				))
+			}</div>
 			 </div>
                 </div>
             </div>
