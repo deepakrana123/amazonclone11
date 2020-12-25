@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "7"
+script:
+ - echo "Deploy!!"
+install:
+  - npm install -g firebase-tools
+after_success:
+  - firebase deploy --project clone-a2f90 --token 1//0gw0BY2o8Bb0aCgYIARAAGBASNwF-L9Ir5ba4cFXw76AtyQkFfsiknwlfuUShLhibJkJEdEOqlIVhZVI7zdt-T_EV_k_v44A3Rho
